@@ -1,12 +1,12 @@
 .imagem-carrosel-1{
 	object-fit: cover;
-	object-position: 0 5%;
+	object-position: 0 25%;
 	height: 400px;
 }
 
 .imagem-carrosel-2{
 	object-fit: cover;
-	object-position: 0 0;
+	object-position: 0 30%;
 	height: 400px;
 }
 
