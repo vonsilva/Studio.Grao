@@ -1,3 +1,8 @@
+//constante sleep
+const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+    }
+
 //Função definir cookie
 function definCookie(cname,cvalue,exdays) {
     var d = new Date();
@@ -33,15 +38,17 @@ function salvar() {
     definCookie('nome_user', nome_user, 30);
     $('#modal').modal('hide');
 
-    sleep(800).then(() => {
-        var nome = pegarCookie('nome_user');
 
-        // Exibir modal com nome
-        document.getElementById("a_nome").innerHTML = nome;
+    var nome = pegarCookie('nome_user');
 
-        // Exibir modal com nome
-        $('#modal_nome').modal('show');
-      })
+    // Exibir modal com nome
+    document.getElementsByClassName("a_nome")[0].innerHTML = nome;
+
+    // Exibir modal com nome
+    $('#modal_nome').modal('show');
+
+    console.log('ok');
+
 };
     
 
@@ -58,7 +65,7 @@ function salvar_enter(e){
             var nome = pegarCookie('nome_user');
     
             // Exibir modal com nome
-            document.getElementById("a_nome").innerHTML = nome;
+            document.getElementsByClassName("a_nome")[0].innerHTML = nome;
     
             // Exibir modal com nome
             $('#modal_nome').modal('show');
@@ -70,17 +77,15 @@ function salvar_enter(e){
 
 function fechar() {
     $('#modal_nome').modal('hide');
+    $('#modal_acesso').modal('hide');
 }
 
 
-const sleep = (milliseconds) => {
-    return new Promise(resolve => setTimeout(resolve, milliseconds))
-    }
-
-
+//Pegar nome do usuário
 var nome = pegarCookie('nome_user');
-console.log(nome);
 
+
+//Verificar se existe cookie com o nome, e mostrar modal com nome ou reacesso
 if (nome == '' || nome === 'Anônimo') {
     definCookie('nome_user', 'Anônimo', 30);
 
@@ -89,10 +94,10 @@ if (nome == '' || nome === 'Anônimo') {
 
 }
 else {
-    document.getElementById("a_nome").innerHTML = nome;
+    document.getElementsByClassName("a_nome")[1].innerHTML = nome;
 
-    // Exibir modal com nome
-    $('#modal_nome').modal('show');
+    // Exibir modal
+    $('#modal_acesso').modal('show');       
 }
 
-console.log(nome);
+

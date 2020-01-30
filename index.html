@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Studio Grão</title>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Mono|Indie+Flower|Uncial+Antiqua&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Kalam|Poppins|Roboto+Mono|Indie+Flower|Uncial+Antiqua|Acme|Pacific|Fredoka+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="templates/src/css/pagina_inicial.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -70,7 +69,7 @@
 	    	<div class="carousel-inner">
 
 		    	<div class="carousel-item active">
-		    		<img src="templates/src/img/carrosel.jpg" class="d-block w-100 imagem-carrosel-2" alt="...">
+		    		<img src="templates/src/img/carrosel1.jpg" class="d-block w-100 imagem-carrosel-2" alt="...">
 		    		<div class="carousel-caption d-none d-md-block h-50">
 		        		<h1 class="fonte-pacific display-4,">Lorem ipsum dolor</h1>
 		        	</div>
@@ -104,7 +103,7 @@
 		<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-			<h5 class="fonte-roboto" class="modal-title" id="staticBackdropLabel">Bem Vindo(a) ao Studio Grão!</h5>
+			<h5 class="fonte-kalam" class="modal-title" id="staticBackdropLabel">Bem Vindo(a) ao Studio Grão!</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -131,13 +130,34 @@
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content">
 			<div class="modal-header">
-			  <h5 class="fonte-antiqua" 	class="modal-title">Olá, <a id="a_nome"></a>! tudo <a class="fonte-pacific">Grão</a> com você?</a></h5>
+			  <h5 class="fonte-kalam" class="modal-title">Olá, <a class="a_nome"></a>! tudo <a class="fonte-pacific">Grão</a> com você?</a></h5>
 			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			  </button>
 			</div>
 			<div class="modal-body">
-			  <p class="fonte-antiqua">É bom te ter aqui! Queremos te mostrar tudo que temos para te oferecer.</p>
+			  <p>É bom te ter aqui! Queremos te mostrar tudo que temos para te oferecer.</p>
+			</div>
+			<div class="modal-footer">
+			  <button onclick="fechar()" type="button" class="btn btn-primary">Vamos lá!</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+	<!-- Modal reacesso -->
+	<div id="modal_acesso" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="fonte-kalam" class="modal-title">Bem vindo(a) novamente, <a class="a_nome"></a>! tudo <a class="fonte-pacific">Grão</a> com você?</a></h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <p>É bom te rever por aqui! Se quiser tirar alguma dúvida pode entrar em contato conosco!</p>
 			</div>
 			<div class="modal-footer">
 			  <button onclick="fechar()" type="button" class="btn btn-primary">Vamos lá!</button>
