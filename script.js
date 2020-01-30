@@ -56,23 +56,31 @@ function salvar_enter(e){
     var key = e.keyCode;
     var nome_user = document.getElementById('nome_user').value;
     if(key == 13 && nome_user === '') {
-        definCookie('nome_user', 'Anônimo', 30);
-        console.log('passou');
+        definCookie('nome_user', 'Anônimo', 30);ss
+
+        $('#modal').modal('hide');
+
+        var nome = pegarCookie('nome_user');
+        
+        // Exibir modal com nome
+        document.getElementsByClassName("a_nome")[0].innerHTML = nome;
+    
+        // Exibir modal com nome
+        $('#modal_nome').modal('show');
     }
     else if (key == 13 && nome_user != ''){
         definCookie('nome_user', nome_user, 30);
-        console.log('nao foi');
-    }   
 
-    $('#modal').modal('hide');
+        $('#modal').modal('hide');
 
-    var nome = pegarCookie('nome_user');
+        var nome = pegarCookie('nome_user');
+        
+        // Exibir modal com nome
+        document.getElementsByClassName("a_nome")[0].innerHTML = nome;
     
-    // Exibir modal com nome
-    document.getElementsByClassName("a_nome")[0].innerHTML = nome;
-
-    // Exibir modal com nome
-    $('#modal_nome').modal('show');
+        // Exibir modal com nome
+        $('#modal_nome').modal('show');
+    }   
  
     };
 
