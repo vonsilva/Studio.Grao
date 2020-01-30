@@ -10,6 +10,16 @@
 	height: 400px;
 }
 
+.nav-pills > li > a {
+	padding: 7px 14px;
+	margin: 2px 3px -16px 0px;
+	}
+
+.nav-pills > li > a.active {
+	background-color: #313131!important;
+	padding: 7px 16px;
+}
+
 .fonte-pacific{
 	font-family: 'Pacifico', cursive;
 }
