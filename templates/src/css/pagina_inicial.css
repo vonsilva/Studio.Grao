@@ -20,6 +20,18 @@
 	padding: 7px 16px;
 }
 
+.container_imagem{
+	padding-top: 55px;
+}
+
+.container_principal{
+	padding-top: 80px;
+}
+
+.tamanho_imagem{
+	width: 300px;;
+}
+
 .fonte-pacific{
 	font-family: 'Pacifico', cursive;
 }
