@@ -9,14 +9,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Kalam|Poppins|Roboto+Mono|Indie+Flower|Uncial+Antiqua|Acme|Pacific|Fredoka+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="templates/src/css/pagina_inicial.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-	<nav id="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<span id='top_navbar'></span>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="top_navbar">
 		<a class="navbar-brand" href="#">
 			<img src="templates/src/img/logo_grao.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
 	    	<a class="fonte-pacific text-white">Studio.Grao</a>
@@ -39,15 +38,23 @@
 				</li>
 			  </ul>
 		</div>
-	  </nav>
+	</nav>
 
 
 	<div class="tab-content" id="pills-tabContent">
+
+		<!-- Artes -->
 		<div class="tab-pane fade show active" id="artes" role="tab" aria-labelledby="pills-home-tab">
+			<div class="container">...</div>
+		</div>
+
+		<!-- Quem somos? -->
+		<div class="tab-pane fade" id="qsomos" role="tabpanel" aria-labelledby="pills-profile-tab">
+
 			<!-- Carrosel e Conteúdo -->
 			<div class="bd-example">
 
-				<div id="carouselExampleCaptions" class="carousel slide container_imagem" data-ride="carousel">
+				<div id="carouselImages" class="carousel slide container_imagem" data-ride="carousel">
 
 					<ol class="carousel-indicators">
 						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -72,21 +79,20 @@
 					</div>
 
 
-					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					<a class="carousel-control-prev" href="#carouselImages" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
+						<span class="sr-only">Anterior</span>
 					</a>
 					
-					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					<a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
+						<span class="sr-only">Próximo</span>
 					</a>
 					
 				</div>
 			</div>
-		</div>
 
-		<div class="tab-pane fade" id="qsomos" role="tabpanel" aria-labelledby="pills-profile-tab">
+			<!-- Textos Quem Somos?-->
 			<div class="container container_principal">
 				<div class="row">
 					<div class="col">
@@ -120,6 +126,7 @@
 			</div>
 		</div>
 
+		<!-- Contatos -->
 		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 	</div>
 
@@ -193,8 +200,26 @@
 	  </div>
 
 
+
+	<footer class="container pt-2 my-md-4 pt-md-4 border-top">
+
+	<div class="row justify-content-md-center">
+		<div class="col">
+			<a href="#top_navbar"><img class="mt-3" src="templates/src/img/logo_grao.jpg" alt="" width="24" height="24"></a>
+		</div>
+		<div class="col col-lg-2">
+			<a href="https://www.instagram.com/s.grao/?hl=pt-br"><img class="mb-2" src="templates/src/img/icone_instagram.png" alt="" width="45" height="45"></a>
+		</div>
+
+	</footer>
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-	<script src="script.js"></script>
+	<script src="script/script.js"></script>
 	</body>
 </html>

@@ -56,7 +56,7 @@ function salvar_enter(e){
     var key = e.keyCode;
     var nome_user = document.getElementById('nome_user').value;
     if(key == 13 && nome_user === '') {
-        definCookie('nome_user', 'Anônimo', 30);ss
+        definCookie('nome_user', 'Anônimo', 30);
 
         $('#modal').modal('hide');
 
@@ -90,6 +90,9 @@ function fechar() {
     $('#modal_acesso').modal('hide');
 }
 
+$("#top_navbar").click(function(evento){
+    animate({scrollTop:0}, 'slow');
+ });
 
 //Pegar nome do usuário
 var nome = pegarCookie('nome_user');

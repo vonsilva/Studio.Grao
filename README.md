@@ -1,6 +1,6 @@
 # Studio.Grao
 
-Studio Grão é uma agência, a princípio fictícia, para um projeto de TCC de dois alunos de Comunicação e Proprganda da Faculdade Belas Artes, onde com permisão dos mesmos, desenvolvi o site visando a necessidade deles.
+Studio Grão é uma agência, a princípio fictícia, para um projeto de TCC de dois alunos de Comunicação e Propaganda da Universidade Belas Artes, onde com permisão dos mesmos, desenvolvi o site visando a necessidade deles.
 
 ## Propósito
 
@@ -8,7 +8,7 @@ O propósito desse site é apenas para fins de estudo no instante momento, mas t
 
 ## Objetivo 
 
-Utilizar conceitos de UX para tornar o site agradavel e usual.
+Utilizar conceitos de UX para tornar o site agradável e usual.
 
 ## Linguagens
 
