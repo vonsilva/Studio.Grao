@@ -98,6 +98,17 @@ $("#top_navbar").click(function(evento){
 var nome = pegarCookie('nome_user');
 
 
+function insereTexto(id)  {
+    document.getElementById(id).style.display = 'block';
+};
+
+
+function removeClass(id)  {
+    var element = document.getElementById(id);
+    element.classList.add("col-6");
+};
+
+
 //Verificar se existe cookie com o nome, e mostrar modal com nome ou reacesso
 if (nome == '' || nome === 'Anônimo') {
      // Exibir modal

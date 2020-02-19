@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Studio Grão</title>
+	<title>Studio.Grão</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="imagem/png" href="templates/src/img/logo_grao.jpg" />
+	<link rel="icon" type="imagem/png" href="templates/src/img/logo_grao.png" />
 	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Kalam|Poppins|Roboto+Mono|Indie+Flower|Uncial+Antiqua|Acme|Pacific|Fredoka+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="templates/src/css/pagina_inicial.css">
@@ -17,8 +17,7 @@
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="top_navbar">
 		<a class="navbar-brand" href="#">
-			<img src="templates/src/img/logo_grao.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-	    	<a class="fonte-pacific text-white">Studio.Grao</a>
+			<img src="templates/src/img/logo_navbar.png" width="235" height="30" class="d-inline-block align-top" alt="">
 		</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +44,40 @@
 
 		<!-- Artes -->
 		<div class="tab-pane fade show active" id="artes" role="tab" aria-labelledby="pills-home-tab">
-			<div class="container">...</div>
+			<div class="container" id="graos">
+				<div class="row">
+					<div class="col">
+						<div class="d-flex justify-content-sm-end">
+							<a href="#" onclick="insereTexto('cat');removeClass('cat')"><img src="templates/src/img/grao_1.png" width="235" height="200" class="d-inline-block align-top" alt=""></a>
+						
+							<div class="" id="cat">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium inventore nesciunt 
+								quaerat, nisi at repellendus ex optio commodi illo reiciendis laborum sed nihil eligendi aliquid
+								labore libero illum assumenda?
+							</div>
+
+						</div>
+					</div>
+				  <div class="col">
+					<img src="templates/src/img/grao_2.png" width="235" height="200" class="d-inline-block align-top" alt="">
+				  </div>
+				  <div class="w-100"></div>
+				  <div class="col">
+					<div class="d-flex justify-content-sm-end">
+						<a href="#" onclick="insereTexto('emp');removeClass('emp');"><img src="templates/src/img/grao_3.png" width="235" height="200" class="d-inline-block align-top" alt=""></a>
+						
+						<div class="" id="emp">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt asperiores vitae 
+							eligendi natus, in quae repudiandae excepturi obcaecati. Similique explicabo, eveniet dicta
+							tempore ducimus eos voluptas iure porro necessitatibus!
+						</div>
+					</div>
+				  </div>
+				  <div class="col">
+					<img src="templates/src/img/grao_4.png" width="235" height="200" class="d-inline-block align-top" alt="">
+				  </div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Quem somos? -->
@@ -98,28 +130,33 @@
 					<div class="col">
 						<h1 class="display-4">Quem Somos?</h1><br>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis,
-							inventore doloremque nulla dicta dolor nemo, assumenda dolorum eum nostrum
-							cum fuga natus! Ut velit voluptatem accusamus quas incidunt mollitia?
+							O Studio GRÃO é agência de comunicação estratégica e pesquisa que atende o 
+							segmento religioso cristão, trazendo consigo a investigação tanto de aspectos
+							comportamentais no segmento religioso (noções, hábitos e percepções por parte
+							daqueles que fazem parte dessa comunidade)
 						</p>
 						<img src="templates/src/img/image.jpg" class="rounded mx-auto d-block tamanho_imagem" alt="..."><br>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis,
-							inventore doloremque nulla dicta dolor nemo, assumenda dolorum eum nostrum
-							cum fuga natus! Ut velit voluptatem accusamus quas incidunt mollitia?
+							como também às noções de marketing
+							dessa área, partindo daí a reconhecer os drivers neste segmento, ou seja, os
+							elementos motivadores comportamentais, que auxiliam nos processos de 
+							planejamento e desenvolvimento de estratégias que atendam aos quesitos
+							de consumo deste público.
 						</p>
 					</div>
 					<div class="col">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis,
-							inventore doloremque nulla dicta dolor nemo, assumenda dolorum eum nostrum
-							cum fuga natus! Ut velit voluptatem accusamus quas incidunt mollitia?
+							A agência, além de contar com um forte apelo de adaptação digital - seja em construção
+							de ambientes, aplicativos ou redes sociais - para o segmento, explora também, no campo 
+							da pesquisa, estudos de Big Data e Inteligência Artificial. Utilizando-se de novas 
+							tecnologias,
 						</p>
 						<img src="templates/src/img/grao.jpg" class="rounded mx-auto d-block tamanho_imagem" alt="..."><br>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis,
-							inventore doloremque nulla dicta dolor nemo, assumenda dolorum eum nostrum
-							cum fuga natus! Ut velit voluptatem accusamus quas incidunt mollitia?
+							a agência se propõe a desenvolver uma plataforma de inteligência artificial 
+							que emite relatórios de tendências e extrai insights como material de apoio na criação 
+							das estratégias e no desenvolvimento de campanhas da agência, sendo este seu ponto de 
+							inovação e diferencial ante a concorrência.
 						</p>
 					</div>
 				</div>
@@ -205,7 +242,7 @@
 
 	<div class="row justify-content-md-center">
 		<div class="col">
-			<a href="#top_navbar"><img class="mt-3" src="templates/src/img/logo_grao.jpg" alt="" width="24" height="24"></a>
+			<a href="#top_navbar"><img class="mt-3" src="templates/src/img/4graos.png" alt="" width="24" height="24"></a>
 		</div>
 		<div class="col col-lg-2">
 			<a href="https://www.instagram.com/s.grao/?hl=pt-br"><img class="mb-2" src="templates/src/img/icone_instagram.png" alt="" width="45" height="45"></a>
@@ -213,7 +250,12 @@
 
 	</footer>
 
-	
+
+
+	<script>
+		document.getElementById('cat').style.display = 'none';
+		document.getElementById('emp').style.display = 'none';
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
