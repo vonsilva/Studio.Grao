@@ -37,6 +37,10 @@
 	margin-top: 100px;
 }
 
+.clicarPont {
+    cursor: pointer;
+}
+
 
 .fonte-pacific{
 	font-family: 'Pacifico', cursive;

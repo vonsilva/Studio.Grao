@@ -94,19 +94,9 @@ $("#top_navbar").click(function(evento){
     animate({scrollTop:0}, 'slow');
  });
 
+ 
 //Pegar nome do usuário
 var nome = pegarCookie('nome_user');
-
-
-function insereTexto(id)  {
-    document.getElementById(id).style.display = 'block';
-};
-
-
-function removeClass(id)  {
-    var element = document.getElementById(id);
-    element.classList.add("col-6");
-};
 
 
 //Verificar se existe cookie com o nome, e mostrar modal com nome ou reacesso
@@ -121,3 +111,38 @@ else {
     // Exibir modal
     $('#modal_acesso').modal('show');       
 }
+
+function removeTexto(id)  {
+    document.getElementById(id).style.display = 'none';
+};
+
+function insereTexto(id)  {
+    document.getElementById(id).style.display = 'block';
+};
+
+
+
+
+function removeClass(id)  {
+    var element = document.getElementById(id);
+    var element_class = document.getElementById(id).className;
+    
+    if (element_class === "col-6")  {
+        insereTexto(id);
+        element.classList.remove("col-6");
+    }
+    else {
+        removeTexto(id)
+        element.classList.add("col-6")
+    }
+
+    var status_display = document.getElementById(id).style.display;
+
+    if (status_display == 'none') {
+        insereTexto(id);
+    }
+    else {
+        removeTexto(id);
+    }
+
+};
